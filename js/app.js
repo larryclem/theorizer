@@ -9,30 +9,40 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	.state('home', {
 		url: '/',
 		templateUrl:'/templates/home.html',
-		controller: 'theoryCtrl',
+		controller: 'hypoCtrl',
 			resolve: {
-			theoriesRef: function (theoryService) {
-				return theoryService.getTheories();
+			hyposRef: function (hypoService) {
+				return hypoService.getHypos();
 			}
 		}
 	})
-	.state('theories', {
-		url: '/theories',
-		templateUrl: '/templates/theories.html',
-		controller: 'theoryCtrl',
+	.state('hypothesize', {
+		url: '/hypothesize',
+		templateUrl:'/templates/hypothesize.html',
+		controller: 'hypoCtrl',
+			resolve: {
+			hyposRef: function (hypoService) {
+				return hypoService.getHypos();
+			}
+		}
+	})
+	.state('hypotheses', {
+		url: '/hypotheses',
+		templateUrl: '/templates/hypotheses.html',
+		controller: 'hypoCtrl',
 		resolve: {
-			theoriesRef: function (theoryService) {
-				return theoryService.getTheories();
+			hyposRef: function (hypoService) {
+				return hypoService.getHypos();
 			}
 		}
 	})
-	.state('theory_eval', {
-		url: '/theory/:theoryId/evaluate',
-		templateUrl: '/templates/theory-evaluate.html',
+	.state('hypo_eval', {
+		url: '/hypothesis/:hypoId/evaluate',
+		templateUrl: '/templates/hypo-evaluate.html',
 		controller: 'evalCtrl',
 		resolve: {
-			theoryRef: function (theoryService, $stateParams) {
-				return theoryService.getTheory($stateParams.theoryId);
+			hypoRef: function (hypoService, $stateParams) {
+				return hypoService.getHypo($stateParams.hypoId);
 			}
 		}
 	})

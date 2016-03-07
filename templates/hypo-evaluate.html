@@ -1,14 +1,14 @@
 <div>
 	<h2> Evaluate this hypothesis, jackass! </h2>
-		<h3>{{theory.title}} </h3>
-			<p> {{theory.evidence}}</p>
+		<h3>Title: {{hypothesis.title}} </h3>
+			<p> Evidence: {{hypothesis.evidence}}</p>
 	
 		<div>
 			Evaluator: <input type="text" placeholder = "name" ng-model="evaluator" />
 			Evaluation: <input type="text" ng-model="evaluation" />
 			<button class="btn" ng-click="addEval()">Evaluate!</button>
 		<div ng-repeat="eval in evals">
-			{{eval.evaluator}}: {{eval.text}}
+			{{eval.evaluator}}: {{eval.evaluation}}
 		</div>
 	
 		</div>

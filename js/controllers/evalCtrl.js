@@ -1,9 +1,9 @@
 angular.module('Theorizer')
-.controller('evalCtrl', function($scope, $firebaseArray, $firebaseObject, theoryRef){
+.controller('evalCtrl', function($scope, $firebaseArray, $firebaseObject, hypoRef){
 
-	$scope.theory = $firebaseObject(theoryRef);
+	$scope.hypothesis = $firebaseObject(hypoRef);
 
-	$scope.evals = $firebaseArray(theoryRef.child('evals'));
+	$scope.evals = $firebaseArray(hypoRef.child('evals'));
 
 	//fire this when click submit comment
 	$scope.addEval = function () {
