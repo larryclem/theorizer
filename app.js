@@ -8,7 +8,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	$stateProvider
 	.state('home', {
 		url: '/',
-		templateUrl:'/templates/home.html',
+		templateUrl:'templates/home.html',
 		controller: 'theoryCtrl',
 			resolve: {
 			theoriesRef: function (theoryService) {
@@ -18,7 +18,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	})
 	.state('theories', {
 		url: '/theories',
-		templateUrl: '/templates/theories.html',
+		templateUrl: 'templates/theories.html',
 		controller: 'theoryCtrl',
 		resolve: {
 			theoriesRef: function (theoryService) {
@@ -28,7 +28,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	})
 	.state('theory_eval', {
 		url: '/theory/:theoryId/evaluate',
-		templateUrl: '/templates/theory-evaluate.html',
+		templateUrl: 'templates/theory-evaluate.html',
 		controller: 'evalCtrl',
 		resolve: {
 			theoryRef: function (theoryService, $stateParams) {
