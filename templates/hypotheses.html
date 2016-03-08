@@ -5,12 +5,14 @@
 	</div>
 
 	
-			<div class="hypo col-md-7" ng-repeat = "(key, hypothesis) in hypotheses">
-	
-				<h3>{{hypothesis.title}}</h3>
+			<div class=" container hypo col-md-7" ng-repeat = "(key, hypothesis) in hypotheses">
+
+			<div class="row hypo-content">
+				<h2>{{hypothesis.title}}</h2>
 				<h5>{{hypothesis.author}}</h5>
 				<p> {{hypothesis.evidence}}</p>
-				<a class="btn btn-primary" ui-sref="hypo_eval({hypoId:hypothesis.$id})" > Evaluate this Hypothesis
+				</div>
+				<a class="btn btn-default" ui-sref="hypo_eval({hypoId:hypothesis.$id})" > Evaluate this Hypothesis
 				</a>
 			</div>
 </div>
