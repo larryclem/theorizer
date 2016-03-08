@@ -1,0 +1,35 @@
+<div class="container-fluid bg-contain comments-pg">
+		<div class="page-title">
+			<h1> Evaluate </h1>
+		</div>
+
+		<div class="hypo-details col-md-7">
+		<h1>{{hypothesis.title}} </h1>
+		<h4>By: {{hypothesis.author}} </h4>
+		<p> Evidence: <br> {{hypothesis.evidence}}</p>
+	</div>
+
+	<div class="hypo-eval-form col-md-7">
+		<h2> Evaluate this hypothesis.</h2>
+		<div class="form-group">
+	  		<label for="evl">Name:</label>
+	  		<input placeholder="Name"type="text" class="form-control" id="evl" ng-model="evaluator">
+			</div>
+
+		<div class="form-group">
+  			<label for="ev">Evaluation:</label>
+  			<textarea placeholder="Include evidence to support your claim, including sources, assumptions & logic." class="form-control" rows="3" id="ev" ng-model="evaluation"></textarea>
+		</div>
+
+		<button type="button" class="btn btn-default btn-lg"  ng-click="addEval()">Evaluate!</button>
+
+	</div>
+
+	<div class="hypo-evals col-md-7" ng-repeat="eval in evals">
+			<p>{{eval.evaluator}}:  {{eval.evaluation}}</p>
+	</div>
+		
+</div>
+
+
+

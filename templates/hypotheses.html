@@ -1,0 +1,19 @@
+<div class="container-fluid bg-contain">
+
+	<div class="row page-title">
+		<h1> Hypotheses to Evaluate</h1>
+	</div>
+
+	
+			<div class=" container hypo col-md-7" ng-repeat = "(key, hypothesis) in hypotheses">
+
+			<div class="row hypo-content">
+				<h2>{{hypothesis.title}}</h2>
+				<h5>{{hypothesis.author}}</h5>
+				<p> {{hypothesis.evidence}}</p>
+				</div>
+				<a class="btn btn-default" ui-sref="hypo_eval({hypoId:hypothesis.$id})" > Evaluate this Hypothesis
+				</a>
+			</div>
+</div>
+

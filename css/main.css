@@ -1,0 +1,228 @@
+
+.nav-style {
+	border-radius:0;
+	background-image: url("../img/nav-bg.png");
+	background-size: cover;
+	margin-bottom:0;
+
+}
+
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-header > a {
+   color: white; /*Change active text color here*/
+    }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-header > a:hover, .navbar-default .navbar-header > a:focus{
+color: #27BBFC;  /*Sets the text hover color on navbar*/
+}
+
+.landing {
+	background-image: url("../img/bg-home.png");
+	background-size: cover;
+	background-attachment: fixed;
+	height:100vh;
+}
+.landing .jumbotron {
+	background:transparent;
+	color:white;
+	
+}
+
+.landing .jumbotron h2 {
+	margin-top:10px;
+	
+}
+
+.landing .jumbotron h1 {
+	margin-bottom:5px;
+	
+}
+
+.summary {
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding:10px 5px 10px 15px;
+}
+
+.title-deco {
+	border-bottom: 3px solid #fa1220;
+	padding:5px 5px 5px 10px;
+	color:#27BBFC;
+}
+
+.theorize {
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #85CB2A;
+	padding:5px 5px 5px 10px;
+}
+
+.btn-primary{
+	background-color:#fa1220;
+	color:white;
+	border-radius:0;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+	background-color:#9D030A;
+	color:white;
+	border-radius:0;
+}
+
+.footer {
+	min-height: 400px;
+	background-color: #27BBFC;
+	border-top: 1px solid white;
+}
+
+.footer-copyright {
+	height: 25px;
+	background-color: black;
+	border-top: 1px solid white;
+}
+
+.bg-contain {
+	background-image: url("../img/bg-home.png");
+	background-size: cover;
+	background-attachment: fixed;
+	height:100%;
+}
+
+.page-title {
+	text-align: center;
+	color:white;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.hypo-form{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-top:45px;
+	margin-bottom:60px;
+
+}
+
+.hypo {
+	margin: 0 auto;
+	float: none;
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	padding-top:15px;
+	margin-bottom: 15px;
+}
+
+.hypo-content {
+	margin: 0 auto;
+	color: black;
+	background: rgba(255, 255, 255, 0.9);
+	border: 2px solid #85CB2A;
+	padding:0 10px 10px 10px;
+	margin-bottom:10px;
+
+}
+
+.hypo-content h2 {
+	margin-top:10px;
+}
+
+
+.hypo-details {
+	margin: 0 auto;
+	float: none;
+	color:black;
+	background: rgba(255, 255, 255, 0.9);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+.hypo-eval-form{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #85CB2A;
+	padding-bottom: 15px;
+	margin-top:15px;
+	margin-bottom:15px;
+
+}
+
+.hypo-evals{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #85CB2A;
+	padding: 10px;
+	margin-top:15px;
+	margin-bottom:15px;
+
+}
+
+.hypo-evals p {
+	margin-bottom:0;
+}
+.comments-pg {
+min-height:700px;
+
+
+}
+.block-white {
+	background: rgba(255,255,255, 0.6);
+}
+
+.block-black {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+  body {
+    padding-top:50px;
+  }
+
+@media (max-width: 768px) {
+  body {
+    padding-top:145px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+  	border-top: 1px solid white;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+footer {
+	background-color:black;
+	height:50px;
+	border-top: 1px solid white;
+	color:white;
+	margin-bottom:0;
+}
+
+
+

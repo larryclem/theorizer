@@ -1,0 +1,37 @@
+<div class="container-fluid bg-contain">
+	">
+
+		<div class="hypo-form col-md-7">
+
+			<h1>Hypothesize!</h1>
+			<h3> Post your idea below, including sources. </h3>
+
+			<div class="form-group">
+	  		<label for="usr">Author:</label>
+	  		<input placeholder="Name"type="text" class="form-control" id="usr" ng-model="author">
+			</div>
+	
+			<div class="form-group">
+	  		<label for="hyptitle">Hypothesis:</label>
+	  		<input placeholder="Describe your claim in one sentence"type="text" class="form-control" id="hyptitle"ng-model="title">
+			</div>
+
+			<div class="form-group">
+  			<label for="ev">Evidence:</label>
+  			<textarea placeholder="Include evidence to support your claim, including sources, assumptions & logic." class="form-control" rows="5" id="ev" ng-model="evidence"></textarea>
+			</div>
+
+			<button type="button" class="btn btn-default btn-lg btn-block" ng-click="addHypothesis()">Submit</button>
+
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
