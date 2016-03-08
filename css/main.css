@@ -1,3 +1,4 @@
+
 .nav-style {
 	border-radius:0;
 	background-image: url("../img/nav-bg.png");
@@ -14,24 +15,115 @@
 color: #27BBFC;  /*Sets the text hover color on navbar*/
 }
 
-.inner-content{
-/*background-image: url("../img/bg-home.png");
-background-size: cover;*/
-color: white;
-margin-bottom:0;
-background-color: transparent;
-}
-
 .landing {
 	background-image: url("../img/bg-home.png");
 	background-size: cover;
-	height:700px;
+	background-attachment: fixed;
+	height:100vh;
+}
+.landing .jumbotron {
+	background:transparent;
+	color:white;
+	
+}
+
+
+.footer {
+	min-height: 300px;
+	background-color: #27BBFC;
+	border-top: 1px solid white;
+}
+
+.footer-copyright {
+	height: 25px;
+	background-color: black;
+	border-top: 1px solid white;
 }
 
 .bg-contain {
 	background-image: url("../img/bg-home.png");
 	background-size: cover;
-	height:700px;
+	background-attachment: fixed;
+	height:100%;
+}
+
+.page-title {
+	text-align: center;
+	color:white;
+	margin-bottom:15px;
+}
+
+.hypo-form{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-top:45px;
+	margin-bottom:60px;
+
+}
+
+.hypo {
+	margin: 0 auto;
+	float: none;
+	color:black;
+	background: rgba(255,255,255, 0.9);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.hypo-details {
+	margin: 0 auto;
+	float: none;
+	color:black;
+	background: rgba(255,255,255, 0.9);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-top:45px;
+	margin-bottom:20px;
+}
+
+.hypo-eval-form{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding-bottom: 15px;
+	margin-top:15px;
+	margin-bottom:15px;
+
+}
+
+.hypo-evals{
+	color:white;
+	float: none;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #27BBFC;
+	padding: 10px;
+	margin-top:15px;
+	margin-bottom:15px;
+
+}
+
+.hypo-evals p {
+	margin-bottom:0;
+}
+.comments-pg {
+min-height:700px;
+
+
+}
+.block-white {
+	background: rgba(255,255,255, 0.6);
+}
+
+.block-black {
+	background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -73,7 +165,6 @@ footer {
 	border-top: 1px solid white;
 	color:white;
 	margin-bottom:0;
-
 }
 
 

@@ -11,5 +11,7 @@ angular.module('Theorizer')
 			evaluation: $scope.evaluation,
 			evaluator: $scope.evaluator
 		})
+		$scope.evaluation = null;
+		$scope.evaluator = null;
 	}
 })

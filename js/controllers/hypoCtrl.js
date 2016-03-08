@@ -11,6 +11,7 @@ angular.module('Theorizer')
 		})
 		$scope.title = null;
 		$scope.evidence = null;
+		$scope.author = null;
 		$state.go('hypotheses')
 		
 	}
